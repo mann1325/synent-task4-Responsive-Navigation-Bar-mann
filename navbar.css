@@ -1,0 +1,142 @@
+/* ===== SHARED NAVBAR ===== */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.site-nav .nav-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e67e22;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-bottom: none;
+}
+
+.site-nav .nav-logo:hover {
+  color: #cf6d17;
+  border-bottom: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #e67e22;
+  border-bottom-color: #e67e22;
+}
+
+.nav-links li a.nav-btn {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 7px 18px;
+  border-radius: 20px;
+  border-bottom: none;
+  font-size: 0.85rem;
+}
+
+.nav-links li a.nav-btn:hover {
+  background-color: #cf6d17;
+  color: #fff;
+  border-bottom: none;
+}
+
+.nav-links li a.nav-cart {
+  position: relative;
+  font-size: 1.2rem;
+  color: #ccc;
+  border-bottom: none;
+}
+
+.nav-links li a.nav-cart:hover {
+  color: #e67e22;
+  border-bottom: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #e67e22;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Mobile hamburger */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ccc;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #1a1a1a;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 16px;
+    border-top: 1px solid #333;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu — Omnifood</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+  <!-- Shared Navbar -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">🍽 Omnifood</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="city.html">Locations</a></li>
+      <li><a href="reservation.html">Reserve</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="Contectus.html">Contact</a></li>
+      <li>
+        <a href="cart.html" class="nav-cart" title="Cart">
+          🛒 <span class="cart-count" style="display:none">0</span>
+        </a>
+      </li>
+      <li><a href="sign-up.html" class="nav-btn">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Chef's Iconic Menus</h1>
+    <div class="underline"></div>
+  </header>
+
+  <section class="menu-grid">
+
+    <div class="menu-card" data-name="Iced Diet Lemon Soda" data-price="200" data-img="menu/Iced Diet Lemon Soda.png">
+      <a href="Add.html#iced-lemon-soda" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/Iced Diet Lemon Soda.png" alt="Iced Diet Lemon Soda">
+        </div>
+        <h2>Iced Diet Lemon Soda</h2>
+      </a>
+      <p class="price">Rs. 200.00</p>
+      <div class="stars">★☆☆☆☆</div>
+      <div class="review">700 reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Strawberry Margarita" data-price="400" data-img="menu/juice.jpg">
+      <a href="Add.html#strawberry-margarita" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/juice.jpg" alt="Strawberry Margarita">
+        </div>
+        <h2>Strawberry Margarita</h2>
+      </a>
+      <p class="price">Rs. 400.00</p>
+      <div class="stars">★★☆☆☆</div>
+      <div class="review">800 reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Strawberry Lemonade Soda" data-price="300" data-img="menu/Strawberry Lemonade Soda.png">
+      <a href="Add.html#strawberry-lemonade" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/Strawberry Lemonade Soda.png" alt="Strawberry Lemonade Soda">
+        </div>
+        <h2>Strawberry Lemonade Soda</h2>
+      </a>
+      <p class="price">Rs. 300.00</p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">500 reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Chocolate Milkshake" data-price="200" data-img="menu/Chocolate-Milkshake.jpg">
+      <a href="Add.html#chocolate-milkshake" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/Chocolate-Milkshake.jpg" alt="Chocolate Milkshake">
+        </div>
+        <h2>Chocolate Milkshake</h2>
+      </a>
+      <p class="price">Rs. 200.00</p>
+      <div class="stars">★★★★★</div>
+      <div class="review">7K reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Cocktail" data-price="400" data-img="menu/Cocktail.jpg">
+      <a href="Add.html#cocktail" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/Cocktail.jpg" alt="Cocktail">
+        </div>
+        <h2>Cocktail</h2>
+      </a>
+      <p class="price">Rs. 400.00</p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">2K reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Smoothie" data-price="300" data-img="menu/Smoothie.jpg">
+      <a href="Add.html#smoothie" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/Smoothie.jpg" alt="Smoothie">
+        </div>
+        <h2>Smoothie</h2>
+      </a>
+      <p class="price">Rs. 300.00</p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">789 reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Fried Chicken" data-price="500" data-img="menu/chicken.jpg">
+      <a href="Add.html#fried-chicken" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/chicken.jpg" alt="Fried Chicken">
+        </div>
+        <h2>Fried Chicken</h2>
+      </a>
+      <p class="price">Rs. 500.00</p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">200 reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Pizza" data-price="300" data-img="menu/pizza.jpg">
+      <a href="Add.html#pizza" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/pizza.jpg" alt="Pizza">
+        </div>
+        <h2>Pizza</h2>
+      </a>
+      <p class="price">Rs. 300.00</p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">350 reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="menu-card" data-name="Noodles" data-price="400" data-img="menu/noodles.jpg">
+      <a href="Add.html#noodles" class="card-link">
+        <div class="image-wrapper">
+          <img src="menu/noodles.jpg" alt="Noodles">
+        </div>
+        <h2>Noodles</h2>
+      </a>
+      <p class="price">Rs. 400.00</p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">600 reviews</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+  </section>
+
+  <script src="cart.js"></script>
+  <script src="navbar.js"></script>
+  <script>
+    // Wire up Add to Cart buttons on menu page
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const card = this.closest('.menu-card');
+        const name  = card.dataset.name;
+        const price = parseFloat(card.dataset.price);
+        const img   = card.dataset.img;
+        addToCart(name, price, img);
+        this.textContent = '✓ Added!';
+        setTimeout(() => { this.textContent = 'Add to Cart'; }, 1500);
+      });
+    });
+  </script>
+</body>
+</html>
